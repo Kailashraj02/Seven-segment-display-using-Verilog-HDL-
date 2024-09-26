@@ -56,7 +56,7 @@ Verilog Code for Seven-Segment Display
        end
       endmodule
 
-      ![Screenshot 2024-09-26 141110](https://github.com/user-attachments/assets/2f42bb0e-e9dc-4c4b-87a4-d87f29df57e2)
+![Screenshot 2024-09-26 141110](https://github.com/user-attachments/assets/2f42bb0e-e9dc-4c4b-87a4-d87f29df57e2)
 
         
 
