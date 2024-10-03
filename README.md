@@ -35,11 +35,11 @@ Diagram
 
 Verilog Code for Seven-Segment Display
 
-// seven_segment_display.v
-module seven_segment_display (
+    // seven_segment_display.v
+    module seven_segment_display (
     input wire [3:0] binary_input,
     output reg [6:0] seg_output
-);
+    );
     always @(*) begin
         case (binary_input)
             4'b0000: seg_output = 7'b0111111; // 0
@@ -55,17 +55,17 @@ module seven_segment_display (
             default: seg_output = 7'b0000000; // blank or error
         endcase
     end
-endmodule
+    endmodule
 
 
-Testbench for Seven-Segment Display:
-module seven_segment_tb;
-reg [3:0] bcd;
-wire [6:0] seg;
-SEVEN_SEGMENT uut(
+    Testbench for Seven-Segment Display:
+    module seven_segment_tb;
+    reg [3:0] bcd;
+    wire [6:0] seg;
+    SEVEN_SEGMENT uut(
         .bcd(bcd),
         .seg(seg));
- initial
+     initial
         begin
         bcd= 4'b0000;
         //#10 bcd = 4'b0000; 
@@ -80,7 +80,7 @@ SEVEN_SEGMENT uut(
         #10 bcd = 4'b1001; 
         #10 $stop;
         end
-endmodule
+    endmodule
 
 ![seven segment tb](https://github.com/user-attachments/assets/a6faf01a-f47e-4118-95cc-ed5f37bba67f)
 
